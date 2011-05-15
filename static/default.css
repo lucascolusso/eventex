@@ -1,0 +1,90 @@
+@font-face {
+	font-family: Helvetica, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+article, section, aside, hgroup, nav, header, footer, figure, figcaption {
+  display: block;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: #fff;
+}
+html, body {
+  font-family: Helvetica, sans-serif;
+  height: 100%;
+  background: #b2e1ff;
+}
+.container {
+  min-height: 100%;
+  width: 960px;
+  margin: 0 auto;
+}
+* html .container {
+  height: 100%;
+}
+header h1 {
+  display: inline-block;
+  padding: 40px 50px 5px 0px;
+  font-size: 60px;
+  text-shadow: 1px 1px 1px #42607a;
+}
+header h1 a {
+  text-decoration: none;
+  color: #90ee90;
+}
+header h2, .view h2 {
+  margin: 0px 0px 30px 0px;
+  font-size: 14px;
+  color: #627077;
+}
+.itens {
+  list-style: none;
+}
+.item > p {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+}
+.item > p:hover {
+  color: #cbffff;
+}
+.item > p > strong {
+    color: #90ee90;
+}
+.single .item > p {
+  font-size: 40px;
+}
+.single .item > p:hover {
+  color: #fff;
+}
+.answers {
+  width: 960px;
+  list-style: none;
+  overflow: auto;
+  margin: 10px 0px 30px 0px;
+}
+.answers li {
+  float: left;
+  width: 460px;
+  margin: 10px;
+}
+nav ul {
+  list-style: none;
+  overflow: auto;
+}
+nav ul li {
+  float: left;
+  margin-right: 20px;
+}
+nav ul li a:hover {
+  text-decoration: none;
+}
+footer {
+  font-size: 12px;
+  margin: 40px 0px;
+  color: #627077;
+}
