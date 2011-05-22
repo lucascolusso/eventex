@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>EventeX</title>
+<meta charset="utf-8" />
+<link href="{{ STATIC_URL }}css/default.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<div id="wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="{% url index %}">Evente<sup>X</sup></a></h1>
+			<p>By <a a href="{% url index %}">Welcome to the Django</a></p>
+		</div>
+		<div id="banner"><img src="{{ STATIC_URL }}images/img01.jpg"/></div>
+	</div>
+	<div id="menu" class="container">
+		<ul>
+			<li class="active"><a href="{% url index %}">Home</a></li>
+			<li><a href="#">Programação</a></li>
+            <li><a href="#">Inscrição</a></li>
+			<li><a href="#">Contato</a></li>
+		</ul>
+	</div>
+	<div id="page" class="container">
+	<div class="view">{% block content %}{% endblock %}</div>
+  </div>
+</div>
+<div id="footer" class="container">
+	<p>© 2011. <a href="{% url index %}">EventeQuis</a>, Todos direitos reservadis.</a></p>
+</div>
+</body>
+</html>
